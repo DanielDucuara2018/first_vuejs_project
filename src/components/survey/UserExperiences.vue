@@ -40,7 +40,7 @@ export default {
     loadExperiences() {
       this.isLoading = true;
       this.error = null;
-      fetch('https://vue-http-demo-85e9e.firebaseio.com/surveys.json')
+      fetch('/users')
         .then((response) => {
           if (response.ok) {
             return response.json();
@@ -51,7 +51,7 @@ export default {
           const results = [];
           for (const id in data) {
             results.push({
-              id: id,
+              id: data[id].id,
               name: data[id].name,
               rating: data[id].rating,
             });

@@ -1,0 +1,6 @@
+version: '3'
+services:
+ my_first_vuejs:
+  image: danob22/first_vuejs_project:1.0
+  ports: 
+  - 8080:8080

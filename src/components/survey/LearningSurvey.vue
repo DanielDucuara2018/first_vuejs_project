@@ -63,7 +63,7 @@ export default {
       // });
 
       this.error = null;
-      fetch('https://vue-http-demo-85e9e.firebaseio.com/surveys.json', {
+      fetch('/users', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
